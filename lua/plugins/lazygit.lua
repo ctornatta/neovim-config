@@ -1,4 +1,4 @@
--- nvim v0.8.0
+-- Ensure the LazyGit package is installed on the system
 return {
     "kdheepak/lazygit.nvim",
     lazy = true,
