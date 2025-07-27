@@ -35,3 +35,7 @@ vim.o.ignorecase = true
 -- This overrides ignorecase when your search pattern contains uppercase letters.
 vim.o.smartcase = true
 
+-- Keep signcolumn on by default
+-- “Always show the sign column, even if there are no signs to display.”
+vim.o.signcolumn = 'yes'
+
