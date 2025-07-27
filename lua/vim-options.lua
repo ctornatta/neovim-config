@@ -14,6 +14,10 @@ vim.o.relativenumber = true
 -- enable mousemode
 vim.o.mouse = 'a'
 
+-- Don't show the mode, since it's already in the status line
+-- TODO: Not sure what this does, come back to it
+-- vim.o.showmode = false
+
 -- I think this syncs the OS and NEOVIM clipboards together.
 -- if using wayland ensure that wl-clipboard is installed
 vim.schedule(function()
@@ -30,3 +34,4 @@ vim.o.undofile = true
 vim.o.ignorecase = true
 -- This overrides ignorecase when your search pattern contains uppercase letters.
 vim.o.smartcase = true
+
