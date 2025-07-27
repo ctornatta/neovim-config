@@ -8,5 +8,9 @@ return {
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
     lazy = false, -- neo-tree will lazily load itself
+    config = function()
+      vim.keymap.set("n", "<leader>f", ":Neotree filesystem reveal left<CR>", {})
+      vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+    end,
   }
 }
