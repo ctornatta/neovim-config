@@ -14,6 +14,7 @@ vim.o.relativenumber = true
 vim.o.mouse = 'a'
 
 -- I think this syncs the OS and NEOVIM clipboards together.
+-- if using wayland ensure that wl-clipboard is installed
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
