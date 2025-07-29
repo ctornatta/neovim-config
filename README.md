@@ -1,11 +1,6 @@
 # neovim-config
 My neovim configuration
 
-
-# TODO
-
-- [ ] Move all keybindings to one file.
-
 # To install
 
 ```shell
