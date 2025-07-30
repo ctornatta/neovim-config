@@ -131,11 +131,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- this is for the barbar plugin. The "A" is the ALT key so ALT-, and ALT-. to move the buffers
-vim.keymap.set('n', '<A-,>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<A-.>', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<A-<>', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<A->>', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
+-- Buffer navigation using leader + bracket keys (cross-platform compatible)
+vim.keymap.set('n', '<leader>[', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true, desc = 'Previous buffer' })
+vim.keymap.set('n', '<leader>]', '<Cmd>BufferNext<CR>', { noremap = true, silent = true, desc = 'Next buffer' })
 
 -- Enable later for now commenting out
 -- vim.keymap.set('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', { noremap = true, silent = true })
