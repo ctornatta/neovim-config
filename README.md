@@ -18,3 +18,8 @@ sudo dnf copr enable atim/lazygit -y
 sudo dnf install lazygit
 ```
 
+Point tmux at the config file in this repo
+```shell
+alias tmux='tmux -f ~/.config/nvim/tmux/tmux.conf'
+```
+
