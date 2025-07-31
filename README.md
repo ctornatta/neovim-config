@@ -23,3 +23,9 @@ Point tmux at the config file in this repo
 alias tmux='tmux -f ~/.config/nvim/tmux/tmux.conf'
 ```
 
+# Inspirational Configs
+
+https://github.com/BreadOnPenguins/nvim
+https://github.com/nvim-lua/kickstart.nvim
+https://github.com/cpow/neovim-for-newbs/
+
