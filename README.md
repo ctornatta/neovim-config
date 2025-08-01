@@ -23,6 +23,10 @@ Point tmux at the config file in this repo
 alias tmux='tmux -f ~/.config/nvim/tmux/tmux.conf'
 ```
 
+# Documentation
+
+📖 **[Keybinding Cheat Sheet](docs/README.md)** - Complete reference for all Neovim and tmux keybindings
+
 # Inspirational Configs
 
 https://github.com/BreadOnPenguins/nvim

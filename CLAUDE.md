@@ -80,6 +80,21 @@ When modifying this configuration:
 3. Test changes by reloading Neovim (`:qa` and restart)
 4. Use `:Lazy` to manage plugin installations and updates
 
+## Documentation Management
+
+### Keybinding Cheat Sheet
+A comprehensive keybinding cheat sheet is maintained at `docs/README.md`. This file contains:
+- All custom Neovim keybindings organized by category
+- Tmux keybindings and configuration details
+- Cross-reference with plugin configurations
+
+**Important**: When adding new keybindings or plugins:
+1. Add the plugin configuration to `lua/plugins/[plugin-name].lua`
+2. Update `docs/README.md` with any new keybindings
+3. Keep the cheat sheet synchronized with actual configurations
+
+Claude Code is responsible for maintaining this documentation automatically when configuration changes are made.
+
 ## File Structure Notes
 
 The `plugins.lua` file currently returns an empty table but serves as the entry point for Lazy.nvim to discover plugin configurations in the `plugins/` directory. New plugins should be added as separate files in `lua/plugins/`.

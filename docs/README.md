@@ -1,0 +1,138 @@
+# Neovim & Tmux Keybinding Cheat Sheet
+
+This document contains all custom keybindings for my Neovim and tmux configurations.
+
+**Leader Key**: `Space` (`<leader>`)
+
+---
+
+## 🔧 Core Neovim Keybindings
+
+### Navigation & Windows
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<C-h>` | Move focus left | Move to left window (tmux-navigator) |
+| `<C-j>` | Move focus down | Move to lower window (tmux-navigator) |
+| `<C-k>` | Move focus up | Move to upper window (tmux-navigator) |
+| `<C-l>` | Move focus right | Move to right window (tmux-navigator) |
+| `<Esc>` | Clear search | Clear search highlights |
+| `<Esc><Esc>` | Exit terminal | Exit terminal mode |
+
+### Buffer Management
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>[` | Previous buffer | Navigate to previous buffer |
+| `<leader>]` | Next buffer | Navigate to next buffer |
+
+### Diagnostics
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>q` | Diagnostic quickfix | Open diagnostic quickfix list |
+
+---
+
+## 🔍 Telescope (Fuzzy Finder)
+
+### Search Commands
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>sf` | Search files | Find files in project |
+| `<leader>sg` | Live grep | Search text across files |
+| `<leader>sw` | Search word | Search current word under cursor |
+| `<leader>sh` | Search help | Search help documentation |
+| `<leader>sk` | Search keymaps | Search available keymaps |
+| `<leader>sn` | Search Neovim | Search Neovim config files |
+| `<leader>ss` | Select telescope | Browse telescope pickers |
+| `<leader>sd` | Search diagnostics | Search LSP diagnostics |
+| `<leader>sr` | Search resume | Resume last telescope search |
+| `<leader>s.` | Recent files | Search recently opened files |
+| `<leader><leader>` | Find buffers | Find existing buffers |
+| `<leader>/` | Buffer search | Fuzzy search in current buffer |
+| `<leader>s/` | Search open files | Live grep in open files only |
+
+### Telescope Navigation (Inside Picker)
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<C-/>` | Help (Insert mode) | Show keymaps for current picker |
+| `?` | Help (Normal mode) | Show keymaps for current picker |
+
+---
+
+## 📁 Neo-tree (File Explorer)
+
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>f` | File explorer | Open filesystem tree (left sidebar) |
+| `<leader>bf` | Buffer explorer | Open buffer tree (floating window) |
+
+---
+
+## 🔀 Git Integration
+
+### LazyGit
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>lg` | LazyGit | Open LazyGit interface |
+
+---
+
+## 🤖 Claude Code (AI Assistant)
+
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>ac` | Toggle Claude | Toggle Claude Code terminal |
+| `<leader>as` | Send to Claude | Send visual selection to Claude (visual mode) |
+| `<leader>ad` | Accept diff | Accept Claude diff suggestions |
+| `<leader>ar` | Reject diff | Reject Claude diff suggestions |
+
+---
+
+## 🔄 Tmux Keybindings
+
+**Prefix Key**: `Ctrl-a` (`<prefix>`)
+
+### Session & Configuration
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<prefix> r` | Reload config | Source tmux configuration file |
+
+### Pane Management
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<prefix> \|` | Vertical split | Split window vertically |
+| `<prefix> -` | Horizontal split | Split window horizontally |
+| `<prefix> m` | Maximize pane | Toggle pane zoom/maximize |
+
+### Pane Navigation (vim-tmux-navigator)
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `Ctrl-h` | Move left | Select left pane (seamless with Neovim) |
+| `Ctrl-j` | Move down | Select lower pane (seamless with Neovim) |
+| `Ctrl-k` | Move up | Select upper pane (seamless with Neovim) |
+| `Ctrl-l` | Move right | Select right pane (seamless with Neovim) |
+
+### Pane Resizing
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<prefix> h` | Resize left | Resize pane left by 5 columns |
+| `<prefix> j` | Resize down | Resize pane down by 5 rows |
+| `<prefix> k` | Resize up | Resize pane up by 5 rows |
+| `<prefix> l` | Resize right | Resize pane right by 5 columns |
+
+### Settings
+- **Base index**: Windows and panes start at 1 (not 0)
+- **Mouse support**: Enabled
+- **Terminal**: 256 color support
+
+---
+
+## 📝 Notes
+
+- **Seamless Navigation**: The vim-tmux-navigator plugin allows `Ctrl-h/j/k/l` to work across both Neovim windows and tmux panes
+- **Lazy Loading**: Many plugins are loaded on-demand to improve startup time
+- **Leader Timeout**: 300ms timeout for leader key sequences
+- **Clipboard**: Syncs with system clipboard (requires `wl-clipboard` on Wayland)
+
+---
+
+*This cheat sheet is automatically managed by Claude Code. Last updated: 2025-08-01*
