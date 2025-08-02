@@ -11,10 +11,10 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 ### Navigation & Windows
 | Keybinding | Action | Description |
 |------------|--------|-------------|
-| `<C-h>` | Move focus left | Move to left window (tmux-navigator) |
-| `<C-j>` | Move focus down | Move to lower window (tmux-navigator) |
-| `<C-k>` | Move focus up | Move to upper window (tmux-navigator) |
-| `<C-l>` | Move focus right | Move to right window (tmux-navigator) |
+| `<C-h>` | Move focus left | Move to left window |
+| `<C-j>` | Move focus down | Move to lower window |
+| `<C-k>` | Move focus up | Move to upper window |
+| `<C-l>` | Move focus right | Move to right window |
 | `<Esc>` | Clear search | Clear search highlights |
 | `<Esc><Esc>` | Exit terminal | Exit terminal mode |
 
@@ -103,13 +103,13 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 | `<prefix> -` | Horizontal split | Split window horizontally |
 | `<prefix> m` | Maximize pane | Toggle pane zoom/maximize |
 
-### Pane Navigation (vim-tmux-navigator)
+### Pane Navigation
 | Keybinding | Action | Description |
 |------------|--------|-------------|
-| `Ctrl-h` | Move left | Select left pane (seamless with Neovim) |
-| `Ctrl-j` | Move down | Select lower pane (seamless with Neovim) |
-| `Ctrl-k` | Move up | Select upper pane (seamless with Neovim) |
-| `Ctrl-l` | Move right | Select right pane (seamless with Neovim) |
+| `<prefix> h` | Move left | Select left pane |
+| `<prefix> j` | Move down | Select lower pane |
+| `<prefix> k` | Move up | Select upper pane |
+| `<prefix> l` | Move right | Select right pane |
 
 ### Pane Resizing
 | Keybinding | Action | Description |
@@ -128,11 +128,11 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 
 ## 📝 Notes
 
-- **Seamless Navigation**: The vim-tmux-navigator plugin allows `Ctrl-h/j/k/l` to work across both Neovim windows and tmux panes
+- **Window Navigation**: Use `Ctrl-h/j/k/l` for Neovim window navigation
 - **Lazy Loading**: Many plugins are loaded on-demand to improve startup time
 - **Leader Timeout**: 300ms timeout for leader key sequences
 - **Clipboard**: Syncs with system clipboard (requires `wl-clipboard` on Wayland)
 
 ---
 
-*This cheat sheet is automatically managed by Claude Code. Last updated: 2025-08-01*
+*This cheat sheet is automatically managed by Claude Code. Last updated: 2025-08-02*
