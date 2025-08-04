@@ -76,6 +76,21 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 
 ---
 
+## 📊 Lualine (Status Line)
+
+Lualine provides a fast and configurable statusline with the following features:
+- **Mode indicator**: Shows current Vim mode (Normal, Insert, Visual, etc.)
+- **Git branch**: Displays current git branch
+- **Git diff**: Shows added/modified/removed line counts
+- **Diagnostics**: LSP diagnostic counts (errors, warnings, info, hints)
+- **File information**: Encoding, file format, and file type
+- **Location**: Current line and column position
+- **Progress**: Percentage through file
+
+*No custom keybindings - displays automatically in the status line*
+
+---
+
 ## 🤖 Claude Code (AI Assistant)
 
 | Keybinding | Action | Description |
