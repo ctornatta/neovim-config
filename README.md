@@ -30,7 +30,7 @@ alias tmux='tmux -f ~/.config/nvim/tmux/tmux.conf'
 
 Add to alias to open up files via fzf. Use `tab` to select multiple files.
 ```shell
-inv='nvim $(fzf -m --preview="bat --color=always {}")'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 ```
 
 # Documentation
