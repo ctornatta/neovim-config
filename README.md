@@ -18,6 +18,11 @@ sudo dnf copr enable atim/lazygit -y
 sudo dnf install lazygit
 ```
 
+Install fzf
+```shell
+sudo dnf install fzf
+```
+
 Point tmux at the config file in this repo
 ```shell
 alias tmux='tmux -f ~/.config/nvim/tmux/tmux.conf'
