@@ -91,6 +91,44 @@ Lualine provides a fast and configurable statusline with the following features:
 
 ---
 
+## 🌳 Treesitter (Syntax Highlighting & Navigation)
+
+Treesitter provides advanced syntax highlighting, code navigation, and text objects based on syntax trees.
+
+### Incremental Selection
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<C-space>` | Init/Expand selection | Start selection or expand to next syntax node |
+| `<C-s>` | Expand scope | Expand selection to outer scope |
+| `<C-backspace>` | Shrink selection | Shrink selection to previous node |
+
+### Text Objects
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `af` | Around function | Select entire function including definition |
+| `if` | Inside function | Select function body only |
+| `ac` | Around class | Select entire class including definition |
+| `ic` | Inside class | Select class body only |
+
+### Navigation
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `]m` | Next function start | Jump to start of next function |
+| `]M` | Next function end | Jump to end of next function |
+| `[m` | Previous function start | Jump to start of previous function |
+| `[M` | Previous function end | Jump to end of previous function |
+| `]]` | Next class start | Jump to start of next class |
+| `][` | Next class end | Jump to end of next class |
+| `[[` | Previous class start | Jump to start of previous class |
+| `[]` | Previous class end | Jump to end of previous class |
+
+### Features
+- **Enhanced highlighting**: Better syntax highlighting for 15+ languages
+- **Smart indentation**: Language-aware indentation
+- **Auto-install**: Parsers installed automatically for configured languages
+
+---
+
 ## 🤖 Claude Code (AI Assistant)
 
 | Keybinding | Action | Description |
