@@ -234,6 +234,21 @@ Treesitter provides advanced syntax highlighting, code navigation, and text obje
 
 ---
 
+## 🎨 Theme (TokyoNight)
+
+**Active Theme**: TokyoNight Night (Dark)
+
+TokyoNight provides a clean, modern dark theme with excellent readability and syntax highlighting support:
+- **Style**: Night variant (darkest version)
+- **Terminal colors**: Full 256-color support
+- **Italic support**: Comments and keywords styled with italics
+- **Consistent styling**: Sidebars and floating windows match the dark theme
+- **Plugin integration**: Optimized for Treesitter, LSP, and all configured plugins
+
+*No keybindings - theme is automatically applied on startup*
+
+---
+
 ## 📝 Notes
 
 - **Window Navigation**: Use `Ctrl-h/j/k/l` for Neovim window navigation
