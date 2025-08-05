@@ -58,6 +58,61 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 
 ---
 
+## 🔍 FZF-Lua (Fast Fuzzy Finder)
+
+### File Operations
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>ff` | Find files | Search files in project |
+| `<leader>fo` | Recent files | Search recently opened files |
+| `<leader>fb` | Find buffers | Search open buffers |
+| `<leader>fl` | Buffer lines | Search lines in current buffer |
+
+### Search Operations
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>fg` | Live grep | Search text across files |
+| `<leader>fw` | Grep word | Search word under cursor |
+| `<leader>fW` | Grep WORD | Search WORD under cursor |
+| `<leader>fv` | Grep visual | Search visual selection (visual mode) |
+
+### Git Integration
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>gc` | Git commits | Browse git commit history |
+| `<leader>gb` | Git branches | Switch git branches |
+| `<leader>gs` | Git status | View git status with fzf |
+
+### LSP Integration
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>fr` | LSP references | Find symbol references |
+| `<leader>fd` | LSP definitions | Go to symbol definitions |
+| `<leader>fs` | Document symbols | Browse document symbols |
+| `<leader>fS` | Workspace symbols | Browse workspace symbols |
+
+### Help & Commands
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>fh` | Help tags | Search help documentation |
+| `<leader>fc` | Commands | Search available commands |
+| `<leader>fk` | Key mappings | Search key mappings |
+| `<leader>f:` | Command history | Browse command history |
+| `<leader>f/` | Search history | Browse search history |
+
+### FZF Navigation (Inside Picker)
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<F1>` | Toggle help | Show/hide help |
+| `<F2>` | Toggle fullscreen | Toggle fullscreen mode |
+| `<F4>` | Toggle preview | Show/hide preview pane |
+| `<Ctrl-f>` | Page down | Scroll preview down |
+| `<Ctrl-b>` | Page up | Scroll preview up |
+| `<Alt-a>` | Select all | Select all items |
+| `<Alt-d>` | Deselect all | Deselect all items |
+
+---
+
 ## 📁 Neo-tree (File Explorer)
 
 | Keybinding | Action | Description |
