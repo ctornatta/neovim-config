@@ -129,6 +129,43 @@ This document contains all custom keybindings for my Neovim and tmux configurati
 |------------|--------|-------------|
 | `<leader>lg` | LazyGit | Open LazyGit interface |
 
+### GitSigns (Git Change Indicators)
+
+#### Hunk Navigation
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `]c` | Next hunk | Jump to next git change |
+| `[c` | Previous hunk | Jump to previous git change |
+
+#### Hunk Actions
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>hs` | Stage hunk | Stage current hunk |
+| `<leader>hr` | Reset hunk | Reset current hunk |
+| `<leader>hS` | Stage buffer | Stage entire buffer |
+| `<leader>hR` | Reset buffer | Reset entire buffer |
+| `<leader>hu` | Undo stage | Undo last stage operation |
+| `<leader>hp` | Preview hunk | Show hunk diff in popup |
+
+#### Blame & Diff
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `<leader>hb` | Blame line | Show git blame for current line |
+| `<leader>tb` | Toggle blame | Toggle line blame display |
+| `<leader>hd` | Diff this | Show diff against index |
+| `<leader>hD` | Diff HEAD | Show diff against HEAD |
+| `<leader>td` | Toggle deleted | Toggle deleted line display |
+
+#### Text Objects
+| Keybinding | Action | Description |
+|------------|--------|-------------|
+| `ih` | Hunk object | Select current git hunk (operator/visual mode) |
+
+#### Visual Indicators
+- **Sign column**: Shows `+` for additions, `~` for changes, `_` for deletions
+- **Untracked files**: Shows `┆` for new files
+- **Real-time updates**: Changes appear instantly as you edit
+
 ---
 
 ## 📊 Lualine (Status Line)
